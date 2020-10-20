@@ -20,31 +20,4 @@
   #L%
   -->
 <configuration>
-    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>codenjoy.log</file>
-        <append>true</append>
-
-        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
-            <maxFileSize>300MB</maxFileSize>
-        </triggeringPolicy>
-        <encoder>
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
-        </encoder>
-    </appender>
-
-    <!--appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
-        </encoder>
-    </appender-->
-
-    <logger name="com.codenjoy" level="DEBUG" additivity="true"/>
-    <logger name="com.codenjoy.dojo" level="DEBUG" additivity="true"/>
-    <logger name="com.codenjoy.dojo.transport" level="DEBUG" additivity="false"/>
-    <logger name="org.eclipse.jetty" level="DEBUG" additivity="false"/>
-
-    <root level="debug">
-        <appender-ref ref="FILE" additivity="false"/>
-        <appender-ref ref="STDOUT" additivity="false"/>
-    </root>
 </configuration>

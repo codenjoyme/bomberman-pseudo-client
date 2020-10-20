@@ -2,3 +2,4 @@ tools
 target
 engine-libs.zip
 *-servers.zip
+*.log
