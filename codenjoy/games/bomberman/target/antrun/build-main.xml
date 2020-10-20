@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="maven-antrun-" default="main"  >
-<target name="main">
-  <zip basedir="." excludes="src/main/java/com/codenjoy/dojo/bomberman/client/ai/*,                                                src/test/java/com/codenjoy/dojo/bomberman/client/ai/*,                                                **/target/**" destfile="src/main/webapp/resources/user/bomberman-servers.zip" update="true" includes="src/main/java/com/codenjoy/dojo/bomberman/client/*.java,                                                src/main/java/com/codenjoy/dojo/bomberman/model/elements/*.java,                                                src/main/java/com/codenjoy/dojo/bomberman/model/Elements.java,                                                src/test/java/com/codenjoy/dojo/bomberman/client/*.java,                                                README.*,                                                src/license/**,                                                **/pom.xml"/>
-  <zip basedir="." excludes="src/main/java/**,                                                 src/main/webapp/**,                                                 src/main/resources/**,                                                 **/target/**" destfile="src/main/webapp/resources/user/bomberman-servers.zip" update="true" includes="src/main/**"/>
-  <copy file="src/main/webapp/resources/user/bomberman-servers.zip" todir="target/classes/resources/user"/>
-</target>
-</project>

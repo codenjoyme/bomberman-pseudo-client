@@ -1,6 +1,7 @@
 set GAME_TO_RUN=bomberman
 set BOARD_URL=http://localhost:8080/codenjoy-contest/board/player/0?code=000000000000
 
+set REVISION=master
 set ROOT=%CD%
 set GIT_HOME=%ROOT%\tools\git
 set GIT=%GIT_HOME%\cmd\git
