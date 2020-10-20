@@ -17,7 +17,7 @@ IF "%DEBUG%"=="true" (
 %GIT% fetch --all
 %GIT% pull --recurse-submodules origin
 %GIT% submodule update --remote --init
-%GIT% checkout ${REVISION}
+%GIT% checkout %REVISION%
 %GIT% fetch
 %GIT% status
 
