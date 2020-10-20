@@ -13,15 +13,6 @@ IF "%DEBUG%"=="true" (
     pause >nul
 )
 
-%GIT% clean -fx
-%GIT% reset --hard
-%GIT% fetch --all
-%GIT% pull --recurse-submodules origin
-%GIT% submodule update --remote --init
-%GIT% checkout ${REVISION}
-%GIT% fetch
-%GIT% status
-
 cd %GAMES_HOME%
 call %MVNW% clean install -N -DskipTests=%SKIP_TESTS%
 
